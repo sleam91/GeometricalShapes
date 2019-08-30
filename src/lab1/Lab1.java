@@ -4,9 +4,11 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Lab1 {
+    
+    static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        
         boolean newCalculation = true;
 
         while (newCalculation) {
@@ -22,13 +24,13 @@ public class Lab1 {
 
                 switch (answer) {
                     case 1:
-                        circle(sc);
+                        circle();
                         break;
                     case 2:
-                        rectangle(sc);
+                        rectangle();
                         break;
                     case 3:
-                        triangle(sc);
+                        triangle();
                         break;
                     case 0:
                         newCalculation = false;
@@ -60,7 +62,7 @@ public class Lab1 {
 
     }
 
-    private static void triangle(Scanner sc) {
+    private static void triangle() {
         int answer;
         System.out.println("Triangle. What would you like to calculate?"
                 + "\n1. Area\n2. Perimeter\n3. Both");
@@ -88,7 +90,7 @@ public class Lab1 {
         }
     }
 
-    private static void rectangle(Scanner sc) {
+    private static void rectangle() {
         int answer;
         System.out.println("Rectangle. What would you like to calculate?"
                 + "\n1. Area\n2. Perimeter\n3. Both");
@@ -112,7 +114,7 @@ public class Lab1 {
         }
     }
 
-    private static void circle(Scanner sc) {
+    private static void circle() {
         int answer;
         System.out.println("Circle. What would you like to calculate?"
                 + "\n1. Area\n2. Circumference\n3. Both");
