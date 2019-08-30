@@ -2,7 +2,6 @@ package lab1;
 
 public class Cirkel {
 
-    private final double PI = 3.14;
     private double radie;
 
     public Cirkel(double radie) {
@@ -14,11 +13,11 @@ public class Cirkel {
     }
 
     public void setRadie(double radie) {
-        this.radie=radie;
+        this.radie = radie;
     }
-    
-    public double area(){
-        double area=radie*radie*PI;
+
+    public double area() {
+        double area = radie * radie * Math.PI;
         return area;
     }
 
